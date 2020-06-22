@@ -9,6 +9,7 @@ import (
 	"os/exec"
 	"path"
 	"path/filepath"
+	"strings"
 	"text/template"
 
 	"github.com/spf13/cobra"
@@ -75,8 +76,8 @@ If you plan to make a module and distribute it on its own, you should create a n
 		moduleName := args[0]
 
 		// Check we are in a project dir (at least a dir with go.mod)
-		c := exec.Command("go", "list", "-f", "'{{ .Name }}")
-		if res, err := c.Output(); err != nil || string(res) != "main" {
+		c := exec.Command("go", "list", "-f", "{{ .Name }}")
+		if res, err := c.Output(); err != nil || strings.TrimSpace(string(res)) != "main" {
 			fmt.Println("You must call hexya module new from a project directory.")
 			fmt.Println(err)
 			os.Exit(1)
@@ -89,7 +90,8 @@ If you plan to make a module and distribute it on its own, you should create a n
 			fmt.Println(err)
 			os.Exit(1)
 		}
-		projectPath := string(projectPathBytes)
+		projectPath := strings.TrimSpace(string(projectPathBytes))
+		projectPath = filepath.Join(projectPath, moduleName)
 
 		// Create hexya module subdir
 		os.MkdirAll(moduleName, 0755)
@@ -100,13 +102,13 @@ If you plan to make a module and distribute it on its own, you should create a n
 		}{
 			ModuleName: moduleName,
 		}
-		if err := writeFileFromTemplate(filepath.Join(projectPath, "000hexya.go"), hexyaGoTmpl, data); err != nil {
+		if err := writeFileFromTemplate(filepath.Join(moduleName, "000hexya.go"), hexyaGoTmpl, data); err != nil {
 			fmt.Println(err)
 			os.Exit(1)
 		}
 		// Create standard directories
 		for _, dir := range symlinkDirs {
-			if err := os.MkdirAll(filepath.Join(projectPath, dir), 0755); err != nil {
+			if err := os.MkdirAll(filepath.Join(moduleName, dir), 0755); err != nil {
 				fmt.Println(err)
 			}
 		}
@@ -146,7 +148,7 @@ import (
 	// blank import here this hexya module dependencies 
 )
 
-const MODULE_NAME string = {{ .ModuleName }}
+const MODULE_NAME string = "{{.ModuleName}}"
 
 func init() {
 	server.RegisterModule(&server.Module{
