@@ -8,7 +8,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/flosch/pongo2"
+	"github.com/flosch/pongo2/v4"
 	"github.com/gleke/hexya/src/i18n"
 	"github.com/gleke/hexya/src/tools/xmlutils"
 	. "github.com/smartystreets/goconvey/convey"

@@ -12,7 +12,7 @@ import (
 	"strings"
 
 	"github.com/beevik/etree"
-	"github.com/flosch/pongo2"
+	"github.com/flosch/pongo2/v4"
 	"github.com/gleke/hexya/src/tools/xmlutils"
 )
 
