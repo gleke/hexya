@@ -7,7 +7,7 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin/render"
-	"github.com/hexya-erp/hexya/src/tools/hweb"
+	"github.com/gleke/hexya/src/tools/hweb"
 )
 
 // Registry is the templates set of the application

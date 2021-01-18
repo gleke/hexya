@@ -18,8 +18,8 @@ import (
 	"database/sql"
 	"time"
 
-	"github.com/hexya-erp/hexya/src/models/operator"
-	"github.com/hexya-erp/hexya/src/tools/strutils"
+	"github.com/gleke/hexya/src/models/operator"
+	"github.com/gleke/hexya/src/tools/strutils"
 	"github.com/jmoiron/sqlx"
 )
 

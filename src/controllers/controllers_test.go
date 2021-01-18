@@ -9,7 +9,7 @@ import (
 	"testing"
 
 	"github.com/gin-gonic/gin"
-	"github.com/hexya-erp/hexya/src/server"
+	"github.com/gleke/hexya/src/server"
 	. "github.com/smartystreets/goconvey/convey"
 )
 

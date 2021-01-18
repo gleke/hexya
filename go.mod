@@ -1,6 +1,6 @@
-module github.com/hexya-erp/hexya
+module github.com/gleke/hexya
 
-go 1.13
+go 1.15
 
 require (
 	github.com/beevik/etree v1.1.0
@@ -14,8 +14,8 @@ require (
 	github.com/gin-gonic/gin v1.4.0
 	github.com/golang/protobuf v1.3.2 // indirect
 	github.com/google/uuid v1.1.1
+	github.com/gleke/pool v1.0.2
 	github.com/gorilla/sessions v1.2.0 // indirect
-	github.com/hexya-erp/pool v1.0.2
 	github.com/jmoiron/sqlx v1.2.0
 	github.com/json-iterator/go v1.1.8 // indirect
 	github.com/juju/errors v0.0.0-20190930114154-d42613fe1ab9 // indirect

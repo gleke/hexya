@@ -17,8 +17,8 @@ package models
 import (
 	"fmt"
 
-	"github.com/hexya-erp/hexya/src/models/fieldtype"
-	"github.com/hexya-erp/hexya/src/tools/strutils"
+	"github.com/gleke/hexya/src/models/fieldtype"
+	"github.com/gleke/hexya/src/tools/strutils"
 )
 
 // substituteRelatedFields returns a copy of the given fields slice with related fields substituted by their related

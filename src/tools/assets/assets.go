@@ -13,7 +13,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/hexya-erp/hexya/src/tools/logging"
+	"github.com/gleke/hexya/src/tools/logging"
 )
 
 // A Compiler can compile to CSS

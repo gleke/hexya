@@ -21,7 +21,7 @@ import (
 	"reflect"
 	"strconv"
 
-	"github.com/hexya-erp/hexya/src/models/fieldtype"
+	"github.com/gleke/hexya/src/models/fieldtype"
 )
 
 // A RecordRef uniquely identifies a Record by giving its model and ID.

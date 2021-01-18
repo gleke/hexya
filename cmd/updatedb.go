@@ -6,8 +6,8 @@ package cmd
 import (
 	"path/filepath"
 
-	"github.com/hexya-erp/hexya/src/models"
-	"github.com/hexya-erp/hexya/src/server"
+	"github.com/gleke/hexya/src/models"
+	"github.com/gleke/hexya/src/server"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )

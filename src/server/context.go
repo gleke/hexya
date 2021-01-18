@@ -12,8 +12,8 @@ import (
 
 	"github.com/gin-contrib/sessions"
 	"github.com/gin-gonic/gin"
-	"github.com/hexya-erp/hexya/src/tools/exceptions"
-	"github.com/hexya-erp/hexya/src/tools/hweb"
+	"github.com/gleke/hexya/src/tools/exceptions"
+	"github.com/gleke/hexya/src/tools/hweb"
 )
 
 // The Context allows to pass data across controller layers

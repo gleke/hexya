@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/hexya-erp/hexya/src/models/operator"
+	"github.com/gleke/hexya/src/models/operator"
 )
 
 // Expression separation symbols

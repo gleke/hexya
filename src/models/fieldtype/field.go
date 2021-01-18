@@ -6,7 +6,7 @@ package fieldtype
 import (
 	"reflect"
 
-	"github.com/hexya-erp/hexya/src/models/types/dates"
+	"github.com/gleke/hexya/src/models/types/dates"
 )
 
 // A Type defines a type of a model's field

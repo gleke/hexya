@@ -17,7 +17,7 @@ package security
 import (
 	"fmt"
 
-	"github.com/hexya-erp/hexya/src/models/types"
+	"github.com/gleke/hexya/src/models/types"
 )
 
 // AuthenticationRegistry is the authentication registry of the application

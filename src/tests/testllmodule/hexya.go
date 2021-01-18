@@ -15,7 +15,7 @@
 package testllmodule
 
 import (
-	"github.com/hexya-erp/hexya/src/server"
+	"github.com/gleke/hexya/src/server"
 )
 
 // Module data declaration

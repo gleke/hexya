@@ -6,7 +6,7 @@ package models
 import (
 	"sort"
 
-	"github.com/hexya-erp/hexya/src/tools/typesutils"
+	"github.com/gleke/hexya/src/tools/typesutils"
 )
 
 // Union returns a new RecordCollection that is the union of this RecordCollection

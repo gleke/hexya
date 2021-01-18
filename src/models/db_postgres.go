@@ -17,9 +17,9 @@ package models
 import (
 	"fmt"
 
-	"github.com/hexya-erp/hexya/src/models/fieldtype"
-	"github.com/hexya-erp/hexya/src/models/operator"
-	"github.com/hexya-erp/hexya/src/tools/nbutils"
+	"github.com/gleke/hexya/src/models/fieldtype"
+	"github.com/gleke/hexya/src/models/operator"
+	"github.com/gleke/hexya/src/tools/nbutils"
 	"github.com/lib/pq"
 )
 

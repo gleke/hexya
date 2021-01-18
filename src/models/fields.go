@@ -21,10 +21,10 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/hexya-erp/hexya/src/models/fieldtype"
-	"github.com/hexya-erp/hexya/src/models/types"
-	"github.com/hexya-erp/hexya/src/tools/nbutils"
-	"github.com/hexya-erp/hexya/src/tools/strutils"
+	"github.com/gleke/hexya/src/models/fieldtype"
+	"github.com/gleke/hexya/src/models/types"
+	"github.com/gleke/hexya/src/tools/nbutils"
+	"github.com/gleke/hexya/src/tools/strutils"
 )
 
 // An OnDeleteAction defines what to be done with this record when

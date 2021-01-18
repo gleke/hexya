@@ -7,7 +7,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/hexya-erp/hexya/src/models/types"
+	"github.com/gleke/hexya/src/models/types"
 	. "github.com/smartystreets/goconvey/convey"
 )
 

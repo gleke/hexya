@@ -21,11 +21,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/hexya-erp/hexya/src/models/fieldtype"
-	"github.com/hexya-erp/hexya/src/models/security"
-	"github.com/hexya-erp/hexya/src/models/types/dates"
-	"github.com/hexya-erp/hexya/src/tools/strutils"
-	"github.com/hexya-erp/hexya/src/tools/typesutils"
+	"github.com/gleke/hexya/src/models/fieldtype"
+	"github.com/gleke/hexya/src/models/security"
+	"github.com/gleke/hexya/src/models/types/dates"
+	"github.com/gleke/hexya/src/tools/strutils"
+	"github.com/gleke/hexya/src/tools/typesutils"
 	"github.com/jmoiron/sqlx"
 )
 

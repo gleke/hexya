@@ -19,7 +19,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/hexya-erp/hexya/src/models/fieldtype"
+	"github.com/gleke/hexya/src/models/fieldtype"
 )
 
 // A cache holds records field values for caching the database to

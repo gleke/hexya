@@ -9,7 +9,7 @@ Author Nicolas Piganeau
 This tutorial requires having installed Hexya <<install.adoc>>.
 
 IMPORTANT: We suppose that you have created a project called `hexya-demo` inside a directory of the same name,
-with `github.com/hexya-erp/hexya-demo` as path.
+with `github.com/gleke/hexya-demo` as path.
 
 During this tutorial, you will create an `openacademy` module for managing training courses.
 We create this module inside the `hexya-demo` project directory as a local module:
@@ -26,7 +26,7 @@ Change the `Modules` key to look like this:
 [source,toml]
 ----
 Modules = [
-    "github.com/hexya-erp/hexya-demo/openacademy",
+    "github.com/gleke/hexya-demo/openacademy",
     "github.com/hexya-addons/web"
 ]
 ----
@@ -104,7 +104,7 @@ created above:
 package openacademy
 
 import (
-	"github.com/hexya-erp/hexya/src/server"
+	"github.com/gleke/hexya/src/server"
 )
 
 const MODULE_NAME string = "openacademy"
@@ -157,7 +157,7 @@ the module.
 package openacademy
 
 import (
-	"github.com/hexya-erp/hexya/src/models"
+	"github.com/gleke/hexya/src/models"
 )
 
 func init() {
@@ -180,9 +180,9 @@ $ hexya generate .
 
 After generation, our models can be accessed in the `h`, `m` and `q` packages:
 
-- `github.com/hexya-erp/h` is the package used to get model instances which are the entry point to accessing data.
-- `github.com/hexya-erp/m` mainly defines the types of record sets and record data objects.
-- `github.com/hexya-erp/q` is the query builder package of Hexya.
+- `github.com/gleke/h` is the package used to get model instances which are the entry point to accessing data.
+- `github.com/gleke/m` mainly defines the types of record sets and record data objects.
+- `github.com/gleke/q` is the query builder package of Hexya.
 
 [IMPORTANT]
 ====
@@ -207,8 +207,8 @@ Update the `OpenAcademyCourse` model to include a name and a description to our 
 package openacademy
 
 import (
-	"github.com/hexya-erp/hexya/src/models"
-	"github.com/hexya-erp/pool/h" // <1>
+	"github.com/gleke/hexya/src/models"
+	"github.com/gleke/pool/h" // <1>
 )
 
 var fields_OpenAcademyCourse = map[string]models.FieldDefinition{
@@ -584,9 +584,9 @@ the new model
 package openacademy
 
 import (
-	"github.com/hexya-erp/hexya/src/models"
-	"github.com/hexya-erp/hexya/src/models/types"
-	"github.com/hexya-erp/pool/h"
+	"github.com/gleke/hexya/src/models"
+	"github.com/gleke/hexya/src/models/types"
+	"github.com/gleke/pool/h"
 )
 
 var fields_OpenAcademySession = map[string]models.FieldDefinition{
@@ -720,8 +720,8 @@ Let's add relations to our Course and Session models.
 package openacademy
 
 import (
-	"github.com/hexya-erp/hexya/src/models"
-	"github.com/hexya-erp/pool/h"
+	"github.com/gleke/hexya/src/models"
+	"github.com/gleke/pool/h"
 )
 
 var fields_OpenAcademyCourse = map[string]models.FieldDefinition{
@@ -745,9 +745,9 @@ func init() {
 package openacademy
 
 import (
-	"github.com/hexya-erp/hexya/src/models"
-	"github.com/hexya-erp/hexya/src/models/types"
-	"github.com/hexya-erp/pool/h"
+	"github.com/gleke/hexya/src/models"
+	"github.com/gleke/hexya/src/models/types"
+	"github.com/gleke/pool/h"
 )
 
 var fields_OpenAcademySession = map[string]models.FieldDefinition{
@@ -981,8 +981,8 @@ the session-partner relation.
 package openacademy
 
 import (
-	"github.com/hexya-erp/hexya/src/models"
-	"github.com/hexya-erp/pool/h"
+	"github.com/gleke/hexya/src/models"
+	"github.com/gleke/pool/h"
 )
 
 var fields_Partner = map[string]models.FieldDefinition{
@@ -1049,7 +1049,7 @@ Methods are created by `NewMethod()`:
 import (
 (...)
 	// We need to import m to define methods
-	"github.com/hexya-erp/pool/m"
+	"github.com/gleke/pool/m"
 )
 (...)
 ----
@@ -1310,7 +1310,7 @@ We can add a domain to limit instructors to partners who are instructors:
 ----
 import (
 (...)
-	"github.com/hexya-erp/pool/q"
+	"github.com/gleke/pool/q"
 )
 ----
 [source,go]
@@ -1614,8 +1614,8 @@ model.
 package openacademy
 
 import (
-	"github.com/hexya-erp/hexya/src/models/security"
-	"github.com/hexya-erp/hexya/src/server"
+	"github.com/gleke/hexya/src/models/security"
+	"github.com/gleke/hexya/src/server"
 )
 
 const MODULE_NAME string = "openacademy"
@@ -1754,7 +1754,7 @@ of the group must be able to modify it.
 ----
 import (
 (...)
-	"github.com/hexya-erp/pool/q"
+	"github.com/gleke/pool/q"
 )
 
 func getCurrentUser(rs h.OpenAcademyCourseSet) h.UserSet {
@@ -1803,9 +1803,9 @@ session, or for a list of sessions at once.
 package openacademy
 
 import (
-	"github.com/hexya-erp/hexya/src/models"
-	"github.com/hexya-erp/pool/h"
-	"github.com/hexya-erp/pool/q"
+	"github.com/gleke/hexya/src/models"
+	"github.com/gleke/pool/h"
+	"github.com/gleke/pool/q"
 )
 
 var fields_OpenAcademyWizard = map[string]models.FieldDefinition{

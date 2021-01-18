@@ -23,9 +23,9 @@ import (
 	"reflect"
 	"sort"
 
-	"github.com/hexya-erp/hexya/src/models/types/dates"
-	"github.com/hexya-erp/hexya/src/tools/logging"
-	"github.com/hexya-erp/hexya/src/tools/nbutils"
+	"github.com/gleke/hexya/src/models/types/dates"
+	"github.com/gleke/hexya/src/tools/logging"
+	"github.com/gleke/hexya/src/tools/nbutils"
 )
 
 // RecordSet identifies a type that holds a set of records of

@@ -20,10 +20,10 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/hexya-erp/hexya/src/models/fieldtype"
-	"github.com/hexya-erp/hexya/src/models/operator"
-	"github.com/hexya-erp/hexya/src/tools/nbutils"
-	"github.com/hexya-erp/hexya/src/tools/strutils"
+	"github.com/gleke/hexya/src/models/fieldtype"
+	"github.com/gleke/hexya/src/models/operator"
+	"github.com/gleke/hexya/src/tools/nbutils"
+	"github.com/gleke/hexya/src/tools/strutils"
 )
 
 const maxSQLidentifierLength = 63

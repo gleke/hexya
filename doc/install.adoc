@@ -53,7 +53,7 @@ Download Hexya source code with git using the following command:
 
 [source,shell]
 ----
-git clone https://github.com/hexya-erp/hexya.git
+git clone https://github.com/gleke/hexya.git
 ----
 
 WARNING: As Hexya uses Go Modules, the Hexya repository **MUST NOT** be downloaded inside the Go Workspace defined by `$GOPATH`.
@@ -77,7 +77,7 @@ If you want to evaluate Hexya, you can download the `hexya-demo` project.
 
 [source,shell]
 ----
-git clone https://github.com/hexya-erp/hexya-demo.git
+git clone https://github.com/gleke/hexya-demo.git
 ----
 
 WARNING: Here again download the source outside `$GOPATH`.

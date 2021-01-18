@@ -6,7 +6,7 @@ package templates
 import (
 	"strconv"
 
-	"github.com/hexya-erp/hexya/src/tools/logging"
+	"github.com/gleke/hexya/src/tools/logging"
 )
 
 const maxInheritanceDepth = 100

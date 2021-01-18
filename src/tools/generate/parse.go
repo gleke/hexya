@@ -24,8 +24,8 @@ import (
 	"go/types"
 	"strings"
 
-	"github.com/hexya-erp/hexya/src/models/fieldtype"
-	"github.com/hexya-erp/hexya/src/tools/strutils"
+	"github.com/gleke/hexya/src/models/fieldtype"
+	"github.com/gleke/hexya/src/tools/strutils"
 	"golang.org/x/tools/go/packages"
 )
 
