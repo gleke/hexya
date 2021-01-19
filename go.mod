@@ -4,14 +4,13 @@ go 1.15
 
 require (
 	github.com/beevik/etree v1.1.0
-	github.com/cockroachdb/apd v1.1.0 // indirect
-	github.com/cockroachdb/apd/v2 v2.0.1
+	github.com/cockroachdb/apd/v2 v2.0.2
 	github.com/disintegration/imaging v1.6.2
 	github.com/flosch/pongo2/v4 v4.0.2
 	github.com/gin-contrib/pprof v1.3.0
 	github.com/gin-contrib/sessions v0.0.3
 	github.com/gin-gonic/gin v1.6.3
-	github.com/gleke/pool v1.0.3
+	github.com/gleke/pool v0.1.7
 	github.com/golang/protobuf v1.4.3 // indirect
 	github.com/google/uuid v1.1.5
 	github.com/gorilla/sessions v1.2.1 // indirect
