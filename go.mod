@@ -10,7 +10,7 @@ require (
 	github.com/gin-contrib/pprof v1.3.0
 	github.com/gin-contrib/sessions v0.0.3
 	github.com/gin-gonic/gin v1.6.3
-	github.com/gleke/pool v0.1.7
+	github.com/gleke/pool v1.0.3
 	github.com/golang/protobuf v1.4.3 // indirect
 	github.com/google/uuid v1.1.5
 	github.com/gorilla/sessions v1.2.1 // indirect
