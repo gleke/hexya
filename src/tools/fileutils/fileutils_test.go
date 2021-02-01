@@ -9,7 +9,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/hexya-erp/hexya/src/tools/fileutils"
+	"github.com/gleke/hexya/src/tools/fileutils"
 	. "github.com/smartystreets/goconvey/convey"
 )
 

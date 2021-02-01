@@ -14,12 +14,12 @@ var poolModelsTemplate = template.Must(template.New("").Parse(`
 package {{ .ModelsPackageName }}
 
 import (
-	"github.com/hexya-erp/hexya/src/models"
+	"github.com/gleke/hexya/src/models"
 {{- if ne .ModelType "Mixin" }}	
-	"github.com/hexya-erp/pool/{{ .QueryPackageName }}"
+	"github.com/gleke/pool/{{ .QueryPackageName }}"
 {{- end }}
-	"github.com/hexya-erp/pool/{{ .ModelsPackageName }}/{{ .SnakeName }}"
-    "github.com/hexya-erp/pool/{{ .InterfacesPackageName }}"
+	"github.com/gleke/pool/{{ .ModelsPackageName }}/{{ .SnakeName }}"
+    "github.com/gleke/pool/{{ .InterfacesPackageName }}"
 )
 
 // ------- MODEL ---------
@@ -143,8 +143,8 @@ var poolModelsDirTemplate = template.Must(template.New("").Parse(`
 package {{ .SnakeName }}
 
 import (
-    "github.com/hexya-erp/pool/{{ .QueryPackageName }}"
-    "github.com/hexya-erp/pool/{{ .InterfacesPackageName }}"
+    "github.com/gleke/pool/{{ .QueryPackageName }}"
+    "github.com/gleke/pool/{{ .InterfacesPackageName }}"
 {{ range .Deps }} 	"{{ . }}"
 {{ end }}
 )

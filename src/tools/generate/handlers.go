@@ -192,7 +192,7 @@ func searchByNameMethodHandler(astData *MethodASTData, modelData *modelData, dep
 	name := "SearchByName"
 	returnString := fmt.Sprintf("%s.%sSet", PoolInterfacesPackage, modelData.Name)
 	iReturnString := fmt.Sprintf("%sSet", modelData.Name)
-	(*depsMap)["github.com/hexya-erp/hexya/src/models/operator"] = true
+	(*depsMap)["github.com/gleke/hexya/src/models/operator"] = true
 	modelData.AllMethods = append(modelData.AllMethods, methodData{
 		Name:             name,
 		ToDeclare:        astData.ToDeclare,

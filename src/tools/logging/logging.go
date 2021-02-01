@@ -23,7 +23,7 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/hexya-erp/hexya/src/tools/exceptions"
+	"github.com/gleke/hexya/src/tools/exceptions"
 	"github.com/spf13/viper"
 	"go.uber.org/zap"
 )

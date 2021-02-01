@@ -19,7 +19,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/hexya-erp/hexya/src/tools/logging"
+	"github.com/gleke/hexya/src/tools/logging"
 	"github.com/jmoiron/sqlx"
 	_ "github.com/lib/pq"
 	"github.com/spf13/viper"

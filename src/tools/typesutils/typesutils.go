@@ -10,7 +10,7 @@ import (
 	"reflect"
 	"strconv"
 
-	"github.com/hexya-erp/hexya/src/tools/nbutils"
+	"github.com/gleke/hexya/src/tools/nbutils"
 )
 
 // RecordSet is an approximation of models.RecordSet so as not to import models.

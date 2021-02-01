@@ -10,7 +10,7 @@ import (
 	html "html/template"
 	text "text/template"
 
-	"github.com/hexya-erp/hexya/src/models"
+	"github.com/gleke/hexya/src/models"
 )
 
 // A TextReport is a simple text or html report.

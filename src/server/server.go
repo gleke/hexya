@@ -23,8 +23,8 @@ import (
 	"github.com/gin-contrib/sessions"
 	"github.com/gin-contrib/sessions/cookie"
 	"github.com/gin-gonic/gin"
-	"github.com/hexya-erp/hexya/src/templates"
-	"github.com/hexya-erp/hexya/src/tools/logging"
+	"github.com/gleke/hexya/src/templates"
+	"github.com/gleke/hexya/src/tools/logging"
 	"github.com/spf13/viper"
 	"golang.org/x/crypto/acme/autocert"
 )

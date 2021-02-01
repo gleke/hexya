@@ -6,11 +6,11 @@ package models_test
 import (
 	"testing"
 
-	"github.com/hexya-erp/hexya/src/models"
-	"github.com/hexya-erp/hexya/src/models/fields"
-	"github.com/hexya-erp/hexya/src/models/fieldtype"
-	"github.com/hexya-erp/hexya/src/models/types"
-	"github.com/hexya-erp/hexya/src/models/types/dates"
+	"github.com/gleke/hexya/src/models"
+	"github.com/gleke/hexya/src/models/fields"
+	"github.com/gleke/hexya/src/models/fieldtype"
+	"github.com/gleke/hexya/src/models/types"
+	"github.com/gleke/hexya/src/models/types/dates"
 	. "github.com/smartystreets/goconvey/convey"
 )
 

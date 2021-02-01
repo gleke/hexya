@@ -18,7 +18,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/hexya-erp/hexya/src/models/security"
+	"github.com/gleke/hexya/src/models/security"
 	. "github.com/smartystreets/goconvey/convey"
 )
 

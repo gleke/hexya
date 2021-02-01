@@ -7,8 +7,8 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/hexya-erp/hexya/src/models/types/dates"
-	"github.com/hexya-erp/hexya/src/tools/nbutils"
+	"github.com/gleke/hexya/src/models/types/dates"
+	"github.com/gleke/hexya/src/tools/nbutils"
 	. "github.com/smartystreets/goconvey/convey"
 )
 

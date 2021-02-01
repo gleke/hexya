@@ -4,8 +4,8 @@
 package controllers
 
 import (
-	"github.com/hexya-erp/hexya/src/server"
-	"github.com/hexya-erp/hexya/src/tools/logging"
+	"github.com/gleke/hexya/src/server"
+	"github.com/gleke/hexya/src/tools/logging"
 )
 
 var log logging.Logger

@@ -9,15 +9,15 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/hexya-erp/hexya/src/actions"
-	"github.com/hexya-erp/hexya/src/controllers"
-	"github.com/hexya-erp/hexya/src/menus"
-	"github.com/hexya-erp/hexya/src/models"
-	"github.com/hexya-erp/hexya/src/reports"
-	"github.com/hexya-erp/hexya/src/server"
-	"github.com/hexya-erp/hexya/src/templates"
-	"github.com/hexya-erp/hexya/src/tools/logging"
-	"github.com/hexya-erp/hexya/src/views"
+	"github.com/gleke/hexya/src/actions"
+	"github.com/gleke/hexya/src/controllers"
+	"github.com/gleke/hexya/src/menus"
+	"github.com/gleke/hexya/src/models"
+	"github.com/gleke/hexya/src/reports"
+	"github.com/gleke/hexya/src/server"
+	"github.com/gleke/hexya/src/templates"
+	"github.com/gleke/hexya/src/tools/logging"
+	"github.com/gleke/hexya/src/views"
 	"github.com/jmoiron/sqlx"
 	"github.com/spf13/viper"
 )
@@ -32,7 +32,7 @@ var driver, user, password, prefix, debug string
 //
 //     import (
 //         "testing"
-//         "github.com/hexya-erp/hexya/src/tests"
+//         "github.com/gleke/hexya/src/tests"
 //     )
 //
 //     func TestMain(m *testing.M) {

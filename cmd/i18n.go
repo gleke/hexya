@@ -10,7 +10,7 @@ import (
 	"path/filepath"
 	"text/template"
 
-	"github.com/hexya-erp/hexya/src/tools/generate"
+	"github.com/gleke/hexya/src/tools/generate"
 	"github.com/spf13/cobra"
 	"golang.org/x/tools/go/packages"
 )
@@ -91,7 +91,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/hexya-erp/hexya/src/i18n/translations"
+	"github.com/gleke/hexya/src/i18n/translations"
 {{ range .Imports }}	_ "{{ . }}"
 {{ end }}
 )

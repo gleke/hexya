@@ -18,7 +18,7 @@ import (
 	"reflect"
 	"sync"
 
-	"github.com/hexya-erp/hexya/src/models/security"
+	"github.com/gleke/hexya/src/models/security"
 )
 
 // unauthorizedMethods lists methods that should not be given execution permission by default

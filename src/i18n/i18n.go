@@ -7,8 +7,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/hexya-erp/hexya/src/models/types"
-	"github.com/hexya-erp/hexya/src/tools/po"
+	"github.com/gleke/hexya/src/models/types"
+	"github.com/gleke/hexya/src/tools/po"
 )
 
 const fieldSep string = "."

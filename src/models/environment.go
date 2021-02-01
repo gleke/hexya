@@ -17,8 +17,8 @@ package models
 import (
 	"fmt"
 
-	"github.com/hexya-erp/hexya/src/models/types"
-	"github.com/hexya-erp/hexya/src/tools/logging"
+	"github.com/gleke/hexya/src/models/types"
+	"github.com/gleke/hexya/src/tools/logging"
 )
 
 // DBSerializationMaxRetries defines the number of time a

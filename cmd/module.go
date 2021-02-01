@@ -122,7 +122,7 @@ var moduleCleanCmd = &cobra.Command{
 	Long: `Clean the current directory from all generated and test artifacts.
 You should use this command before committing your work.`,
 	Run: func(cmd *cobra.Command, args []string) {
-		runCommand("go", "mod", "edit", "-dropreplace", "github.com/hexya-erp/pool@v1.0.2")
+		runCommand("go", "mod", "edit", "-dropreplace", "github.com/gleke/pool@v1.0.2")
 		if err := removeProjectDir(PoolDirRel); err != nil {
 			fmt.Println(err)
 		}
@@ -144,7 +144,7 @@ var hexyaGoTmpl = template.Must(template.New("").Parse(`
 package {{ .ModuleName }}
 
 import (
-	"github.com/hexya-erp/hexya/src/server"
+	"github.com/gleke/hexya/src/server"
 	// blank import here this hexya module dependencies 
 )
 

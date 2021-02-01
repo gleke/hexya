@@ -6,7 +6,7 @@ package hweb
 import (
 	"testing"
 
-	"github.com/hexya-erp/hexya/src/tools/xmlutils"
+	"github.com/gleke/hexya/src/tools/xmlutils"
 	. "github.com/smartystreets/goconvey/convey"
 )
 

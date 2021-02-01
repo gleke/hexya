@@ -19,10 +19,10 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/hexya-erp/hexya/src/models"
-	"github.com/hexya-erp/hexya/src/models/fields"
-	"github.com/hexya-erp/hexya/src/tools/xmlutils"
-	"github.com/hexya-erp/hexya/src/views"
+	"github.com/gleke/hexya/src/models"
+	"github.com/gleke/hexya/src/models/fields"
+	"github.com/gleke/hexya/src/tools/xmlutils"
+	"github.com/gleke/hexya/src/views"
 	. "github.com/smartystreets/goconvey/convey"
 )
 

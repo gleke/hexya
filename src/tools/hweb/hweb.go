@@ -13,7 +13,7 @@ import (
 
 	"github.com/beevik/etree"
 	"github.com/flosch/pongo2"
-	"github.com/hexya-erp/hexya/src/tools/xmlutils"
+	"github.com/gleke/hexya/src/tools/xmlutils"
 )
 
 // TemplateSet allows you to create your own group of templates with their own

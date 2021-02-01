@@ -20,10 +20,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/hexya-erp/hexya/src/models/fieldtype"
-	"github.com/hexya-erp/hexya/src/models/security"
-	"github.com/hexya-erp/hexya/src/models/types"
-	"github.com/hexya-erp/hexya/src/tools/strutils"
+	"github.com/gleke/hexya/src/models/fieldtype"
+	"github.com/gleke/hexya/src/models/security"
+	"github.com/gleke/hexya/src/models/types"
+	"github.com/gleke/hexya/src/tools/strutils"
 )
 
 // A modelCouple holds a model and one of its mixin

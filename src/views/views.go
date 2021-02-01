@@ -25,9 +25,9 @@ import (
 	"sync"
 
 	"github.com/beevik/etree"
-	"github.com/hexya-erp/hexya/src/i18n"
-	"github.com/hexya-erp/hexya/src/models"
-	"github.com/hexya-erp/hexya/src/tools/xmlutils"
+	"github.com/gleke/hexya/src/i18n"
+	"github.com/gleke/hexya/src/models"
+	"github.com/gleke/hexya/src/tools/xmlutils"
 )
 
 // A ViewType defines the type of a view

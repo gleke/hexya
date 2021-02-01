@@ -6,10 +6,10 @@ package models
 import (
 	"reflect"
 
-	"github.com/hexya-erp/hexya/src/models/fieldtype"
-	"github.com/hexya-erp/hexya/src/models/types"
-	"github.com/hexya-erp/hexya/src/tools/nbutils"
-	"github.com/hexya-erp/hexya/src/tools/strutils"
+	"github.com/gleke/hexya/src/models/fieldtype"
+	"github.com/gleke/hexya/src/models/types"
+	"github.com/gleke/hexya/src/tools/nbutils"
+	"github.com/gleke/hexya/src/tools/strutils"
 )
 
 // A FieldDefinition is a struct that declares a new field in a fields collection;

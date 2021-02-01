@@ -21,7 +21,7 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/hexya-erp/hexya/src/tools/logging"
+	"github.com/gleke/hexya/src/tools/logging"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )

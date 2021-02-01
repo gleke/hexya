@@ -21,7 +21,7 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/hexya-erp/hexya/src/tools/logging"
+	"github.com/gleke/hexya/src/tools/logging"
 )
 
 var log logging.Logger

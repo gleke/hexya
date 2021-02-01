@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/hexya-erp/hexya/src/tools/typesutils"
+	"github.com/gleke/hexya/src/tools/typesutils"
 )
 
 // A recomputePair gives a method to apply on a record collection.

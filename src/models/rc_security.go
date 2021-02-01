@@ -14,7 +14,7 @@
 
 package models
 
-import "github.com/hexya-erp/hexya/src/models/security"
+import "github.com/gleke/hexya/src/models/security"
 
 // addRecordRuleConditions adds the RecordRule conditions on the query of this
 // RecordSet for the user with the given uid and for the given perm Permission.

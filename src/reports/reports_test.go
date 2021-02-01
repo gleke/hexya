@@ -6,10 +6,10 @@ package reports_test
 import (
 	"testing"
 
-	"github.com/hexya-erp/hexya/src/actions"
-	"github.com/hexya-erp/hexya/src/models"
-	"github.com/hexya-erp/hexya/src/models/fields"
-	"github.com/hexya-erp/hexya/src/reports"
+	"github.com/gleke/hexya/src/actions"
+	"github.com/gleke/hexya/src/models"
+	"github.com/gleke/hexya/src/models/fields"
+	"github.com/gleke/hexya/src/reports"
 	. "github.com/smartystreets/goconvey/convey"
 )
 

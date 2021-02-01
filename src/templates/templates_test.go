@@ -9,8 +9,8 @@ import (
 	"testing"
 
 	"github.com/flosch/pongo2"
-	"github.com/hexya-erp/hexya/src/i18n"
-	"github.com/hexya-erp/hexya/src/tools/xmlutils"
+	"github.com/gleke/hexya/src/i18n"
+	"github.com/gleke/hexya/src/tools/xmlutils"
 	. "github.com/smartystreets/goconvey/convey"
 )
 

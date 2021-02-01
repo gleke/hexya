@@ -8,9 +8,9 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/hexya-erp/hexya/src/actions"
-	"github.com/hexya-erp/hexya/src/models"
-	"github.com/hexya-erp/hexya/src/models/types"
+	"github.com/gleke/hexya/src/actions"
+	"github.com/gleke/hexya/src/models"
+	"github.com/gleke/hexya/src/models/types"
 )
 
 // Registry is the report collection of the application

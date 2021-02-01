@@ -22,12 +22,12 @@ import (
 	"strings"
 
 	"github.com/beevik/etree"
-	"github.com/hexya-erp/hexya/src/actions"
-	"github.com/hexya-erp/hexya/src/i18n"
-	"github.com/hexya-erp/hexya/src/menus"
-	"github.com/hexya-erp/hexya/src/models"
-	"github.com/hexya-erp/hexya/src/templates"
-	"github.com/hexya-erp/hexya/src/views"
+	"github.com/gleke/hexya/src/actions"
+	"github.com/gleke/hexya/src/i18n"
+	"github.com/gleke/hexya/src/menus"
+	"github.com/gleke/hexya/src/models"
+	"github.com/gleke/hexya/src/templates"
+	"github.com/gleke/hexya/src/views"
 )
 
 // ResourceDir is the path to the resources directory.
