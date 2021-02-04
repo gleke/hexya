@@ -125,10 +125,15 @@ func trimInterfacePackagePrefix(typ string) string {
 // of the given program.
 // The generated package will be put in the given dir.
 func CreatePool(modules []*ModuleInfo, dir string) {
+
 	modelsASTData := GetModelsASTData(modules)
 	wg := sync.WaitGroup{}
+
+	//fmt.Println("modelsASTData")
+	//fmt.Println(modelsASTData)
 	wg.Add(len(modelsASTData))
 	for mName, mASTData := range modelsASTData {
+
 		for methToADD := range methodsToAdd {
 			mASTData.Methods[methToADD] = MethodASTData{}
 		}
@@ -160,6 +165,7 @@ func CreatePool(modules []*ModuleInfo, dir string) {
 			}
 			mData.Deps = deps
 			// Writing to file
+
 			createPoolFiles(dir, &mData)
 			wg.Done()
 		}(mName, mASTData)
@@ -372,6 +378,7 @@ func CreateFileFromTemplate(fileName string, template *template.Template, data i
 			fileName, "mData", fmt.Sprintf("%#v", data), "src", srcBuffer.String())
 	}
 	// Write to file
+	fmt.Println(fileName)
 	err = ioutil.WriteFile(fileName, srcData, 0644)
 	if err != nil {
 		log.Panic("Error while saving generated source file", "error", err, "fileName", fileName)

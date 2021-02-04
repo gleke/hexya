@@ -103,10 +103,12 @@ func runGenerate(projectDir string) {
 	fmt.Println("Ok")
 
 	fmt.Print("3/5 - Generating pool...")
+	fmt.Println(poolDir)
 	generate.CreatePool(mods, poolDir)
 	fmt.Println("Ok")
 
 	fmt.Print("4/5 - Checking the generated code...")
+	fmt.Println(targetPaths)
 	_, err = loadProgram(targetPaths, testEnabled)
 	if err != nil {
 		fmt.Println("FAIL")
@@ -155,7 +157,9 @@ func loadProgram(targetPaths []string, tests bool) ([]*packages.Package, error) 
 			packages.NeedImports | packages.NeedName | packages.NeedFiles | packages.NeedCompiledGoFiles,
 		Tests: tests,
 	}
+
 	packs, err := packages.Load(&conf, targetPaths...)
+
 	return packs, err
 }
 
@@ -223,6 +227,7 @@ func copyGoModReplaces(poolDir string) {
 		if repl.New.Version != "" {
 			newPath += "@" + repl.New.Version
 		}
+
 		runCommand("go", "mod", "edit", "-replace", fmt.Sprintf("%s=%s", oldPath, newPath), filepath.Join(poolDir, "go.mod"))
 	}
 }
@@ -230,6 +235,7 @@ func copyGoModReplaces(poolDir string) {
 func writeFileFromTemplate(fileName string, tmpl *template.Template, data interface{}) error {
 	var buf bytes.Buffer
 	tmpl.Execute(&buf, data)
+
 	err := ioutil.WriteFile(fileName, buf.Bytes(), 0644)
 	return err
 }
@@ -240,7 +246,12 @@ func createModuleSymlinks(mod *generate.ModuleInfo, projectDir string) {
 	for _, dir := range symlinkDirs {
 		mDir := filepath.Dir(mod.GoFiles[0])
 		srcPath := filepath.Join(mDir, dir)
+		//fmt.Println("srcPath")
+		//fmt.Println(srcPath)
 		dstPath := filepath.Join(projectDir, ResDirRel, dir)
+		//fmt.Println("dstPath")
+		//fmt.Println(dstPath)
+
 		if _, err := os.Stat(srcPath); err != nil {
 			// Subdir doesn't exist, so we don't symlink
 			continue

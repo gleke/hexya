@@ -40,7 +40,7 @@ It is designed for high demand business data processing while being easily custo
 func SetHexyaFlags(c *cobra.Command) {
 	c.PersistentFlags().StringP("config", "c", "", "Alternate configuration file to read. Defaults to $HOME/.hexya/")
 	viper.BindPFlag("ConfigFileName", c.PersistentFlags().Lookup("config"))
-	c.PersistentFlags().StringSliceP("modules", "m", []string{"github.com/hexya-addons/web"}, "List of module paths to load. Defaults to ['github.com/hexya-addons/web']")
+	c.PersistentFlags().StringSliceP("modules", "m", []string{"github.com/gleke/web"}, "List of module paths to load. Defaults to ['github.com/gleke/web']")
 	viper.BindPFlag("Modules", c.PersistentFlags().Lookup("modules"))
 	c.PersistentFlags().StringP("log-level", "L", "info", "Log level. Should be one of 'debug', 'info', 'warn', 'error' or 'panic'")
 	viper.BindPFlag("LogLevel", c.PersistentFlags().Lookup("log-level"))

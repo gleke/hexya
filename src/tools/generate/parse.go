@@ -248,7 +248,11 @@ func GetModelsASTData(modules []*ModuleInfo) map[string]ModelASTData {
 func GetModelsASTDataForModules(modInfos []*ModuleInfo, validate bool) map[string]ModelASTData {
 	modelsData := make(map[string]ModelASTData)
 	for _, modInfo := range modInfos {
+		fmt.Println("modInfo")
+		fmt.Println(modInfo)
 		for _, file := range modInfo.Syntax {
+			fmt.Println("file")
+			fmt.Println(file)
 			ast.Inspect(file, func(n ast.Node) bool {
 				switch node := n.(type) {
 				case *ast.CallExpr:
